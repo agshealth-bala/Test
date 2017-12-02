@@ -1,0 +1,27 @@
+
+USE [CCRP]
+GO
+
+INSERT INTO [dbo].[tblEmployeeRoles]
+           ([EmployeeID]
+           ,[RoleID]
+           ,[CreatedBy]
+           ,[CreatedDate])
+     VALUES
+           (
+            18063
+           ,5
+           ,83
+           ,getdate())
+
+
+INSERT INTO [dbo].[tblCCLFacilityEmployeeMappings]
+           ([FacilityID]
+           ,[EmployeeID]
+           ,[UpdatedBy]
+           ,[UpdatedDate])
+     VALUES
+           (4
+           ,18063
+           ,83
+           ,getdate())
